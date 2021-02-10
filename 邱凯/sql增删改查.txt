@@ -1,0 +1,26 @@
+插入单行
+insert [into] <表名> (列名) values (列值)
+例：insert into Strdents (姓名,性别,出生日期) values (‘邱凯’,‘男’,‘2002/01/22’)
+
+删除
+delete from <表名> where <删除条件>
+例：delete from a where name=‘开景苒’（删除表a中列值为景苒的行）
+
+truncate table <表名>
+例:truncate table tongxunlu
+注意：删除表的所有行，但表的结构、列、约束、索引等不会被删除；不能用语有外建约束引用的表
+
+更改
+update <表名> set <列名=更新值> [where <更新条件>]
+例：update tongxunlu set 年龄=18 where 姓名=‘邱凯’
+
+查询条件
+select <列名> from <表名> where <查询条件表达试>
+
+查询所有数据行和列
+例：select * from a
+说明：查询a表中所有行和列
+
+查询部分行列–条件查询
+例：select i,j,k from a where f=5
+查询表a中f=5的所有行，并显示i,j,k３列
